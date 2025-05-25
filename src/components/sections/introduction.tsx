@@ -14,7 +14,7 @@ export function Introduction({ id }: IntroductionProps) {
         <CardContent className="p-0 md:p-0">
           <div className="grid md:grid-cols-12 items-center">
             <div className="md:col-span-4">
-              <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
+              <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden md:ml-6 lg:ml-8">
                 <Image
                   src={aboutMe.professionalPhotoUrl}
                   alt={`${aboutMe.name} - ${aboutMe.title}`}
