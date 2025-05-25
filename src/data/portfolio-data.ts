@@ -170,7 +170,6 @@ export const projects: Project[] = [
       'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/3.jpg',
       'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/4.jpg',
       'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/5.jpg',
-      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/6.jpg',
     ],
     videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+Parental+Control',
     videoUrl:'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/parental_control_app/project1.mp4',
