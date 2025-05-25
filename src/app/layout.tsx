@@ -1,10 +1,11 @@
+
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import { Navbar } from '@/components/layout/navbar';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
-import { GenkitClientProvider } from '@/components/layout/genkit-client-provider';
+// Removed: import { GenkitClientProvider } from '@/components/layout/genkit-client-provider';
 
 const roboto = Roboto({
   weight: ['300', '400', '500', '700'],
@@ -25,14 +26,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${roboto.variable} font-sans antialiased`}>
-        <GenkitClientProvider>
-          <Navbar />
-          <main className="min-h-screen">
-            {children}
-          </main>
-          <Footer />
-          <Toaster />
-        </GenkitClientProvider>
+        {/* Removed GenkitClientProvider wrapper */}
+        <Navbar />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer />
+        <Toaster />
       </body>
     </html>
   );
