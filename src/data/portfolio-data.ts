@@ -79,6 +79,7 @@ export interface Project {
   description: string[]; // Array of strings for paragraphs
   images: string[];
   videoPreviewThumbnail?: string; // URL for a thumbnail image that looks like a video player
+  videoUrl?: string;
   tags: string[];
   repoLink?: string;
 }
@@ -115,7 +116,8 @@ export const projects: Project[] = [
       'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/11.jpg',
       'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/12.jpg'
     ],
-    videoPreviewThumbnail: 'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/cinema_club_app/project1.mp4',
+    videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+Cinema+Club',
+    videoUrl:'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/cinema_club_app/project1.mp4',
     tags: ['Flutter', 'Dart', 'Bloc', 'Dio', 'Floor','Firebase','Clean Architecture','Unit Test'],
      repoLink: 'https://github.com/AhmedMohamedKhaledIbrahem/cinema_club',
   },
@@ -133,6 +135,7 @@ export const projects: Project[] = [
       'https://placehold.co/600x400.png?text=E-commerce+App+Screen+5',
     ],
     videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+E-commerce',
+    
     tags: ['Android', 'Kotlin', 'XML', 'ExoPlayer', 'MVVM','Fragments'],
   },
 ];
