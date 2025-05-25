@@ -149,6 +149,6 @@ export const aboutMe = {
   "Passionate about solving complex problems and continuously enhancing user experiences through efficient and elegant code."
 ]
 ,
-  professionalPhotoUrl: "https://github.com/user-attachments/assets/c0f71272-3775-4367-9229-d20e6cc4ea8f",
+  professionalPhotoUrl: "https://github.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/blob/master/assets_image/image/profile/ahmed.jpg",
   professionalPhotoAiHint: "professional portrait",
 };
