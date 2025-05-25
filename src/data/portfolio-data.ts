@@ -87,6 +87,23 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'project-1',
+    title: 'Internet-Connection-Monitor (Android Library)',
+    images:[],
+    description: [
+      'Customizable library to verify actual internet connectivity using HEAD requests.',
+      'Supports interval configuration and custom endpoints.',
+      'Designed for reliable offline/online network detection.',
+      'Includes a demo video to show functionality.'
+    ],
+    videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+Internet-Connection-Monitor',
+    videoUrl: 'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/internet_connection_monitor/project1.mp4',
+    tags: ['Android', 'Kotlin','StateFlow', 'Coroutines', 'Network Header Request'],
+    repoLink: 'https://github.com/AhmedMohamedKhaledIbrahem/Internet-Connection-Monitor',
+  },
+  
+  {
+  
+    id: 'project-2',
     title: 'Cinema Club App (Flutter)',
     description: [
       'Built with Clean Architecture, Bloc, Dio, Floor, and Firebase.',
@@ -119,24 +136,46 @@ export const projects: Project[] = [
     videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+Cinema+Club',
     videoUrl:'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/cinema_club_app/project1.mp4',
     tags: ['Flutter', 'Dart', 'Bloc', 'Dio', 'Floor','Firebase','Clean Architecture','Unit Test'],
-     repoLink: 'https://github.com/AhmedMohamedKhaledIbrahem/cinema_club',
+    repoLink: 'https://github.com/AhmedMohamedKhaledIbrahem/cinema_club',
   },
   {
-    id: 'project-2',
-    title: 'Music App (Native)',
+    id: 'project-3',
+    title: 'Blind App (Native)',
     description: [
-      'Supports plays both audio and video files.',
+      'Voice-activated app for the visually impaired.',
+      'Supportscommands like "detect", "read", and "find object" for scene and object recognition.'
     ],
    images: [
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+1',
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+2',
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+3',
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+4',
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+5',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/blind_app/1.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/blind_app/2.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/blind_app/3.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/blind_app/4.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/blind_app/5.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/blind_app/6.jpg',
     ],
-    videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+E-commerce',
-    
-    tags: ['Android', 'Kotlin', 'XML', 'ExoPlayer', 'MVVM','Fragments'],
+    videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+Blind',
+    videoUrl:'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/blind_app/project1.mp4',
+    tags: ['Kotlin', 'Jetpack compose', 'Retrofit', 'RxJava','Firebase','MVVM'],
+    repoLink: 'https://github.com/AhmedMohamedKhaledIbrahem/blind-application',
+  },
+  {
+    id: 'project-4',
+    title: 'Parental Control App (Native)',
+    description: [
+      'Companion app allowing caregivers to track blind users location and remotely capture camera photos.',
+    ],
+   images: [
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/1.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/2.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/3.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/4.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/5.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/parental_control_app/6.jpg',
+    ],
+    videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+Parental+Control',
+    videoUrl:'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/parental_control_app/project1.mp4',
+    tags: ['Kotlin', 'Jetpack compose', 'Retrofit', 'RxJava','Firebase','MVVM'],
+    repoLink: 'https://github.com/AhmedMohamedKhaledIbrahem/parental-control',
   },
 ];
 
@@ -149,10 +188,10 @@ export interface ContactInfo {
 }
 
 export const contactInfo: ContactInfo[] = [
-  { type: 'email', label: 'Email', value: 'your.email@example.com', href: 'mailto:your.email@example.com', icon: Mail },
-  { type: 'linkedin', label: 'LinkedIn', value: 'linkedin.com/in/yourprofile', href: 'https://linkedin.com/in/yourprofile', icon: Linkedin },
-  { type: 'github', label: 'GitHub', value: 'github.com/yourusername', href: 'https://github.com/yourusername', icon: Github },
-  { type: 'phone', label: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567', icon: Phone },
+  { type: 'email', label: 'Email', value: 'ahmed.m.khaled.2020@gmail.com', href: 'mailto:ahmed.m.khaled.2020@gmail.com', icon: Mail },
+  { type: 'linkedin', label: 'LinkedIn', value: 'https://www.linkedin.com/in/ahmed-mohamed-elfeky/', href: 'https://www.linkedin.com/in/ahmed-mohamed-elfeky/', icon: Linkedin },
+  { type: 'github', label: 'GitHub', value: 'https://github.com/AhmedMohamedKhaledIbrahem', href: 'https://github.com/AhmedMohamedKhaledIbrahem', icon: Github },
+  { type: 'phone', label: 'Phone', value: '+201068288311', href: 'tel:+201068288311', icon: Phone },
 ];
 
 export const aboutMe = {

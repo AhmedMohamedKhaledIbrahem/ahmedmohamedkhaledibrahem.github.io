@@ -2,13 +2,15 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { SectionWrapper } from '@/components/common/section-wrapper';
 import { projects, Project } from '@/data/portfolio-data';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Badge } from '@/components/ui/badge';
-import { Video as VideoIcon } from 'lucide-react'; // Renamed to avoid conflict with HTML <video>
+import { Button } from '@/components/ui/button';
+import { Video as VideoIcon, ExternalLink } from 'lucide-react';
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface ProjectsProps {
@@ -28,7 +30,7 @@ export function Projects({ id }: ProjectsProps) {
           <Card key={project.id} className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <CardContent className="p-0 md:p-0">
               <div className="grid md:grid-cols-12 gap-0">
-                <div className="md:col-span-5 p-6 md:p-8 flex flex-col justify-center">
+                <div className="md:col-span-7 px-6 pt-5 pb-6 md:px-8 md:pt-5 md:pb-8 flex flex-col">
                   <CardHeader className="p-0 mb-4">
                     <CardTitle className="text-2xl md:text-3xl font-bold text-primary">{project.title}</CardTitle>
                   </CardHeader>
@@ -37,13 +39,21 @@ export function Projects({ id }: ProjectsProps) {
                       <p key={index}>{paragraph}</p>
                     ))}
                   </CardDescription>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map(tag => (
                       <Badge key={tag} variant="secondary">{tag}</Badge>
                     ))}
                   </div>
+                  {project.repoLink && (
+                    <Button asChild variant="outline" className="mt-4 self-start">
+                      <Link href={project.repoLink} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        View Project / Repo
+                      </Link>
+                    </Button>
+                  )}
                 </div>
-                <div className="md:col-span-7 bg-muted/30 p-4 md:p-6">
+                <div className="md:col-span-5 bg-muted/30 p-4 md:p-6">
                   <Carousel className="w-full mb-4 rounded-lg overflow-hidden shadow-md">
                     <CarouselContent>
                       {project.images.map((imgSrc, index) => (
@@ -81,10 +91,9 @@ export function Projects({ id }: ProjectsProps) {
                         data-ai-hint="video thumbnail"
                         className="rounded-md"
                       />
-                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <VideoIcon className="h-16 w-16 text-white" />
+                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center transition-all duration-300">
+                        <VideoIcon className="h-12 w-12 text-white/80 group-hover:text-white group-hover:scale-110 transition-all" />
                       </div>
-                      {/* Screen reader text moved to aria-label on the parent div */}
                     </div>
                   )}
                 </div>
@@ -104,16 +113,13 @@ export function Projects({ id }: ProjectsProps) {
           }}
         >
           <DialogContent className="max-w-3xl w-[90vw] p-0 border-0 bg-transparent shadow-none data-[state=open]:rounded-lg">
-            {/* <DialogHeader className="p-2 bg-background rounded-t-lg absolute top-0 left-0 right-0 z-10">
-              <DialogTitle className="text-sm text-primary">{selectedVideo.title} - Preview</DialogTitle>
-            </DialogHeader> */}
             <div className="aspect-video bg-black rounded-lg overflow-hidden">
               <video
                 className="w-full h-full"
                 src={selectedVideo.url}
                 controls
                 autoPlay
-                onEnded={() => setSelectedVideo(null)} // Optional: close dialog on video end
+                onEnded={() => setSelectedVideo(null)} 
                 aria-label={`${selectedVideo.title} video player`}
               >
                 Your browser does not support the video tag.
