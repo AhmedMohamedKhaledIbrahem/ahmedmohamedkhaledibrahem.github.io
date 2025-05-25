@@ -60,7 +60,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Hilt Dagger, Koin', icon: Settings2 }, // Gears for DI frameworks
       { name: 'Coroutines, RxJava', icon: Zap }, // Lightning for async
       { name: 'Room, SQLite, SQFlite', icon: Database },
-      { name: 'Dio', icon: GitFork }, // For networking library
+      { name: 'Retrofit, Ktor, Dio', icon: GitFork }, // For networking library
     ],
   },
   {

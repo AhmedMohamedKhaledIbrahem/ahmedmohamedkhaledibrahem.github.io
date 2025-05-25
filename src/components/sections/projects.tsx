@@ -46,7 +46,7 @@ export function Projects({ id }: ProjectsProps) {
                               src={imgSrc}
                               alt={`${project.title} - Screenshot ${index + 1}`}
                               layout="fill"
-                              objectFit="cover"
+                              objectFit="contain"
                               data-ai-hint="project screenshot app"
                               className="rounded-md"
                             />
@@ -63,7 +63,7 @@ export function Projects({ id }: ProjectsProps) {
                         src={project.videoPreviewThumbnail}
                         alt={`${project.title} - Video Preview`}
                         layout="fill"
-                        objectFit="cover"
+                        objectFit="contain"
                         data-ai-hint="video play button"
                         className="rounded-md"
                       />
