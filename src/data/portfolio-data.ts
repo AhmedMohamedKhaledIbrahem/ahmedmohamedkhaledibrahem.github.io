@@ -141,15 +141,14 @@ export const contactInfo: ContactInfo[] = [
 ];
 
 export const aboutMe = {
-  name: "Your Name",
-  title: "Senior Mobile Developer & Tech Enthusiast",
+  name: "Ahmed Mohamed Khaled ELfeky",
+  title: "Junior Mobile Developer",
   description: [
-    "Hello! I'm a passionate and results-oriented Mobile Developer with extensive experience in creating high-quality applications for Android and iOS platforms. My expertise lies in Kotlin, Dart, Java, and leveraging modern frameworks like Jetpack Compose and Flutter.",
-    "I thrive on building intuitive user interfaces and robust back-end integrations, always adhering to best practices such as Clean Architecture, SOLID principles, and various design patterns (MVVM, MVI, etc.). I am proficient in managing application state effectively using tools like LiveData, Flow, and BLoC/Cubit.",
-    "Throughout my career, I've contributed to diverse projects, from e-commerce solutions to social networking platforms, consistently delivering solutions that meet user needs and business objectives. My strong understanding of OOP, REST APIs, and various libraries (Hilt, Koin, Coroutines, Room) allows me to tackle complex challenges efficiently.",
-    "I am a firm believer in writing clean, testable, and maintainable code, and I'm adept with version control systems like Git and GitHub. Continuous learning is a core part of my professional journey, always eager to explore new technologies and improve my skillset.",
-    "Beyond coding, I enjoy collaborating with teams, solving problems creatively, and contributing to a positive development environment. I'm excited to connect and discuss how my skills can bring value to your next project."
-  ],
-  professionalPhotoUrl: "https://placehold.co/400x500.png",
+  "Mobile Developer with 1 year of hands-on experience in Native Android development (Kotlin/Java) and cross-platform development using Flutter (Dart).",
+  "Proficient in creating scalable, user-friendly mobile applications following clean architecture principles and modern design patterns.",
+  "Passionate about solving complex problems and continuously enhancing user experiences through efficient and elegant code."
+]
+,
+  professionalPhotoUrl: "https://github.com/user-attachments/assets/c0f71272-3775-4367-9229-d20e6cc4ea8f",
   professionalPhotoAiHint: "professional portrait",
 };
