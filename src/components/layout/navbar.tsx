@@ -1,19 +1,18 @@
+
 'use client';
 
 import Link from 'next/link';
-import { Menu, Briefcase, User, Lightbulb, Mail, Bot, X } from 'lucide-react';
+import { Menu, Briefcase, User, Lightbulb, Mail, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { useState } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '#about', label: 'About Me', icon: User },
   { href: '#skills', label: 'Skills', icon: Lightbulb },
   { href: '#projects', label: 'Projects', icon: Briefcase },
   { href: '#contact', label: 'Contact', icon: Mail },
-  { href: '#ai-tool', label: 'AI Email Tool', icon: Bot },
 ];
 
 export function Navbar() {
