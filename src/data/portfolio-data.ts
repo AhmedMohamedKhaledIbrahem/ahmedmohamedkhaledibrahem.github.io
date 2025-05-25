@@ -115,19 +115,15 @@ export const projects: Project[] = [
       'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/11.jpg',
       'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/12.jpg'
     ],
-    videoPreviewThumbnail: 'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/cinema_club_app/project.mp4',
+    videoPreviewThumbnail: 'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/cinema_club_app/project1.mp4',
     tags: ['Flutter', 'Dart', 'Bloc', 'Dio', 'Floor','Firebase','Clean Architecture','Unit Test'],
      repoLink: 'https://github.com/AhmedMohamedKhaledIbrahem/cinema_club',
   },
   {
     id: 'project-2',
-    title: 'Social Networking Android App',
+    title: 'Music App (Native)',
     description: [
-      'Built a native Android application for social networking using Kotlin and Jetpack Compose.',
-      'Features include user profiles, real-time messaging, photo sharing, and activity feeds.',
-      'Employed MVVM architecture with Coroutines and Flow for asynchronous operations and reactive UI updates.',
-      'Integrated with Google Firebase for backend services like authentication, Firestore, and Cloud Storage.',
-      'Ensured robust performance and adherence to Material Design guidelines for a polished look and feel.'
+      'Supports plays both audio and video files.',
     ],
    images: [
       'https://placehold.co/600x400.png?text=E-commerce+App+Screen+1',
@@ -137,7 +133,7 @@ export const projects: Project[] = [
       'https://placehold.co/600x400.png?text=E-commerce+App+Screen+5',
     ],
     videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+E-commerce',
-    tags: ['Android', 'Kotlin', 'Jetpack Compose', 'Firebase', 'MVVM'],
+    tags: ['Android', 'Kotlin', 'XML', 'ExoPlayer', 'MVVM','Fragments'],
   },
 ];
 
