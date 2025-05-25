@@ -80,28 +80,44 @@ export interface Project {
   images: string[];
   videoPreviewThumbnail?: string; // URL for a thumbnail image that looks like a video player
   tags: string[];
+  repoLink?: string;
 }
 
 export const projects: Project[] = [
   {
     id: 'project-1',
-    title: 'E-commerce Mobile App',
+    title: 'Cinema Club App (Flutter)',
     description: [
-      'Developed a feature-rich e-commerce application for Android and iOS using Flutter.',
-      'Implemented functionalities such as product browsing, cart management, secure payments, and order tracking.',
-      'Utilized Clean Architecture with BLoC for state management to ensure scalability and maintainability.',
-      'Integrated with a RESTful API backend for data synchronization and user authentication.',
-      'Focused on creating a smooth and intuitive user experience with a visually appealing interface.'
+      'Built with Clean Architecture, Bloc, Dio, Floor, and Firebase.',
+      'Supports browsing and searching for movies (top rated, popular, upcoming).',
+      'Offers multi-language support (Arabic and English).',
+      'Includes both light and dark themes.',
+      'Enables login via Email, Google, or Facebook account.'
     ],
+  
     images: [
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+1',
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+2',
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+3',
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+4',
-      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+5',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/13.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/14.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/15.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/1.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/2.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/3.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/4.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/5.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/6.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/16.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/17.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/18.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/7.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/8.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/9.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/10.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/11.jpg',
+      'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_image/image/projects/cinema_club_app/12.jpg'
     ],
-    videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+E-commerce',
-    tags: ['Flutter', 'Dart', 'E-commerce', 'Firebase', 'BLoC'],
+    videoPreviewThumbnail: 'https://raw.githubusercontent.com/AhmedMohamedKhaledIbrahem/ahmedmohamedkhaledibrahem.github.io/master/assets_video/projects/cinema_club_app/project.mp4',
+    tags: ['Flutter', 'Dart', 'Bloc', 'Dio', 'Floor','Firebase','Clean Architecture','Unit Test'],
+     repoLink: 'https://github.com/AhmedMohamedKhaledIbrahem/cinema_club',
   },
   {
     id: 'project-2',
@@ -113,14 +129,14 @@ export const projects: Project[] = [
       'Integrated with Google Firebase for backend services like authentication, Firestore, and Cloud Storage.',
       'Ensured robust performance and adherence to Material Design guidelines for a polished look and feel.'
     ],
-    images: [
-      'https://placehold.co/600x400.png?text=Social+App+Screen+1',
-      'https://placehold.co/600x400.png?text=Social+App+Screen+2',
-      'https://placehold.co/600x400.png?text=Social+App+Screen+3',
-      'https://placehold.co/600x400.png?text=Social+App+Screen+4',
-      'https://placehold.co/600x400.png?text=Social+App+Screen+5',
+   images: [
+      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+1',
+      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+2',
+      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+3',
+      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+4',
+      'https://placehold.co/600x400.png?text=E-commerce+App+Screen+5',
     ],
-    videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+Social',
+    videoPreviewThumbnail: 'https://placehold.co/600x338.png?text=Video+Preview+E-commerce',
     tags: ['Android', 'Kotlin', 'Jetpack Compose', 'Firebase', 'MVVM'],
   },
 ];
