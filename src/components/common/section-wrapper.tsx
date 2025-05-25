@@ -14,9 +14,10 @@ export function SectionWrapper({ children, className, id, ...props }: SectionWra
       className={cn('py-16 md:py-24', className)}
       {...props}
     >
-      <div className="container max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8">
         {children}
       </div>
     </section>
   );
 }
+

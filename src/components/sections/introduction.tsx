@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { SectionWrapper } from '@/components/common/section-wrapper';
 import { aboutMe } from '@/data/portfolio-data';
@@ -14,7 +15,7 @@ export function Introduction({ id }: IntroductionProps) {
         <CardContent className="p-0 md:p-0">
           <div className="grid md:grid-cols-12 items-center">
             <div className="md:col-span-4">
-              <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden md:ml-6 lg:ml-8">
+              <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden md:ml-6 lg:ml-8">
                 <Image
                   src={aboutMe.professionalPhotoUrl}
                   alt={`${aboutMe.name} - ${aboutMe.title}`}
@@ -33,7 +34,7 @@ export function Introduction({ id }: IntroductionProps) {
               <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
                 {aboutMe.title}
               </h2>
-              <div className="space-y-4 text-lg text-muted-foreground">
+              <div className="space-y-4 text-lg text-muted-foreground max-w-prose">
                 {aboutMe.description.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
